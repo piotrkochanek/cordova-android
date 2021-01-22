@@ -34,7 +34,7 @@ class GradlePropertiesParser {
             'org.gradle.daemon': 'true',
 
             // to allow dex in process
-            'org.gradle.jvmargs': '-Xmx2048m',
+            'org.gradle.jvmargs': '-Xmx4g -XX:MaxPermSize=2048m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8',
 
             // Android X
             'android.useAndroidX': 'false',
